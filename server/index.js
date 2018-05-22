@@ -7,6 +7,7 @@ const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 
+//parses json files
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 

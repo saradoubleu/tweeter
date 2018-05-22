@@ -1,0 +1,42 @@
+.new-tweet{
+  /*border-radius: 2px solid grey;*/
+  /*padding: 5em;*/
+/*  width: 90%;*/
+
+background-color: #eee;
+  /*border-color: red;*/
+  /*align-content: center;*/
+  /*margin: 2em;*/
+    /*margin-bottom: 10px;*/
+    /*padding-bottom: 2em;*/
+}
+
+/*#container{*/
+  /*padding: 0.5em;*/
+  /*border: 2px;*/
+  /*border-color: red;*/
+  /*border-radius: 15px 15px 15px 15px;*/
+/*border-radius: 25px;*/
+/*}*/
+textarea{
+  width: 100%;
+  padding: 0.5em;
+}
+
+h2{
+  border-bottom: 2px solid black
+}
+
+.container .new-tweet{
+    width: 90%;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: auto;
+  /*margin-bottom: 2em;*/
+
+}
+
+.container .counter{
+  float: right
+}
+
