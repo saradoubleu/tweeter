@@ -1,23 +1,28 @@
 /* displays the number of characters remaining within the input field*/
 
-/*ensures that the DOM has loaded*/
-//runs a callback
-$(document).ready (function()){
-// console.log();
-}
+//DOCUMENT READY
+$(document).ready(function() {
+  //selector binds the event to the handler
+  $('.new-tweet').on('keyup', '#newTweet textarea', function(){
 
-// $( "#helloBtn" ).click(function(event) {
-//   alert("Hello");
+// var minLength = 0;
+var maxLength = 140;
 
-// });
 
-// //Event binding based on name of element
-// var inputText = document.getElementByName( "text");
-// //event binding based on keyboard function
-// inputText.addEventListener("keyup", function(event));
-// //keyup to update the count total
-// $( "#text" ).keyup(function(event){
-// // console.log(event);
-// eventList
-// })
+var length = $(this).val().length;
+length = maxLength - length;
 
+var counter1 = $(this).siblings('span');
+
+counter1.text(length);
+
+if(length < 0)
+  {
+    counter1.css("color", "red");
+  } else {
+counter1.css("color", "black");
+  }
+
+
+});
+});

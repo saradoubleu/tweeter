@@ -1,23 +1,11 @@
 .new-tweet{
-  /*border-radius: 2px solid grey;*/
-  /*padding: 5em;*/
-/*  width: 90%;*/
-
 background-color: #eee;
-  /*border-color: red;*/
-  /*align-content: center;*/
-  /*margin: 2em;*/
-    /*margin-bottom: 10px;*/
-    /*padding-bottom: 2em;*/
+
 }
 
-/*#container{*/
-  /*padding: 0.5em;*/
-  /*border: 2px;*/
-  /*border-color: red;*/
-  /*border-radius: 15px 15px 15px 15px;*/
-/*border-radius: 25px;*/
-/*}*/
+/*.new-tweet form{
+  padding-top: 5em;
+}*/
 textarea{
   width: 100%;
   padding: 0.5em;
@@ -28,15 +16,47 @@ h2{
 }
 
 .container .new-tweet{
-    width: 90%;
+  width: 90%;
   border-radius: 5px;
   padding: 0.5em;
   margin: auto;
-  /*margin-bottom: 2em;*/
-
+  height: 11em;
+  border-style: solid;
+  border-width: 1px;
+  border: dark gray;
 }
 
 .container .counter{
   float: right
 }
 
+article{
+  width: 90%;
+  border-radius: 5px;
+  /*padding: 0.5em;*/
+  margin: auto;
+  border-style: solid black;
+  height: 11em;
+  border-style: solid;
+  border-width: 1px;
+}
+
+article > header {
+background-color: #eee;
+
+}
+article > header > span {
+  float: right;
+}
+article > footer {
+  border-top: 1px solid #eee;
+  height: 10em;
+}
+
+article:hover{
+  font-weight: bold;
+}
+
+article > img{
+  /*margin: 4px;*/
+}
