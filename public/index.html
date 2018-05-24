@@ -10,6 +10,8 @@
 <!-- Custom Font Roboto Condesed -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700,700i" rel="stylesheet">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -18,8 +20,9 @@
 <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
 
 <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
-<!--
-<script type="text/javascript" src="/scripts/composer-char-counter.js"></script> -->
+
+<!-- <script type="text/javascript" src="/scripts/composer-char-counter.js"></script> -->
+
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -44,24 +47,28 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form name="newTweet" action="/tweets/" method="POST">
+        <form name="newTweet" id="newTweet" action="/tweets/" method="POST">
           <textarea name="text" id ="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
+          <!--container [Main] > new-tweet [Section] > .newTweet [Form] > counter [Span]-->
         </form>
       </section>
-<div></div>
+      <!-- <div> -->
       <section class="all-tweets">
         <article name="every-tweet">
-          <!-- <img src=> -->
-          <header name="user"><img src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png""> Bill Fields
-
-                    <span class="handle"> @MrFields</span>
-</header>
-          <p>this is the middle</p>
-          <footer>days ago</footer>
+          <header name="user">
+            <img name="avatar" src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png"/>
+            Bill Fields
+            <span class="handle"> @MrFields</span>
+          </header>
+          <p name="content">this is the middle</p>
+          <footer>10 days ago</footer>
         </article>
       </section>
+      <!-- </div> -->
+          <input type="submit" value="Load More" class="load-more-posts" />
+
     </main>
   </body>
 </html>
