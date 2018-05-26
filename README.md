@@ -15,3 +15,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## End Result
+!["Home page"](https://github.com/saradoubleu/tweeter/blob/master/docs/home.png)
+!["Validation Error when no message is submitted"](https://github.com/saradoubleu/tweeter/blob/master/docs/validation_error_2.png)
+!["Validation Error when the character length exceeds capacity"](https://github.com/saradoubleu/tweeter/blob/master/docs/validation_error.png)
