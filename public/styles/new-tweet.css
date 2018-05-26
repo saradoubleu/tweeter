@@ -1,11 +1,8 @@
+/* Contains styles for new tweets and existing tweets */
 .new-tweet{
 background-color: #eee;
-
 }
 
-/*.new-tweet form{
-  padding-top: 5em;
-}*/
 textarea{
   width: 100%;
   padding: 0.5em;
@@ -20,7 +17,7 @@ h2{
   border-radius: 5px;
   padding: 0.5em;
   margin: auto;
-  height: 11em;
+  height: 12em;
   border-style: solid;
   border-width: 1px;
   border: dark gray;
@@ -29,11 +26,16 @@ h2{
 .container .counter{
   float: right
 }
+.all-tweets{
+  padding-top: 1em;
+}
+.every-tweet .user .handle {
+float: right;
+}
 
 article{
   width: 90%;
   border-radius: 5px;
-  /*padding: 0.5em;*/
   margin: auto;
   border-style: solid black;
   height: 11em;
@@ -43,20 +45,102 @@ article{
 
 article > header {
 background-color: #eee;
-
 }
+
 article > header > span {
   float: right;
 }
 article > footer {
-  border-top: 1px solid #eee;
-  height: 10em;
-}
-
-article:hover{
-  font-weight: bold;
+  border-top: solid black;
+  border: solid black;
 }
 
 article > img{
-  /*margin: 4px;*/
 }
+.tweet{
+  margin-bottom: 20px;
+}
+.tweet .header {
+  background-color: #eee;
+  border-bottom:
+  display:inline-block;
+font-size: 1em;
+  padding: auto;
+  height: 38%;
+}
+
+.tweet .header .icon{
+  padding: 5px;
+  border-radius: 5px;
+}
+.tweet .header .username{
+  display:inline-block;
+}
+
+.tweet img{
+  border-radius: 10%;
+  margin-right: 10px;
+}
+
+
+.footer .time{
+  margin-left: 5px;
+  padding-bottom: 5em;
+}
+
+.tweet .text{
+  margin-left: 5px;
+  padding: 1em;
+  height: 45%;
+  border-bottom: #eee solid;
+
+}
+
+.tweet .header .icon{
+  display: inline-block;
+  float: left;
+}
+
+.tweet .header .username{
+  font-size: 1.70em;
+  display: inline-block;
+  padding-top: .1em;
+}
+
+
+.tweet .header .userHandle{
+  display: inline-block;
+  float: right;
+  padding-top: 1em;
+  padding-right: 1em;
+}
+
+.tweet .header div{
+  display: inline-block;
+}
+
+.tweet .footer .time{
+  font-size: 10px;
+  display: inline-block;
+  padding-top: 1em;
+  /* float: left; */
+}
+
+
+.tweet .footer .share{
+  display: inline-block;
+  float: right;
+  padding-right: 10em;
+  opacity:0;
+}
+
+article{
+  opacity: 0.6;
+}
+
+article:hover{
+  opacity: 1;
+}
+
+.tweet .footer .share:hover{
+  opacity: 1;}
